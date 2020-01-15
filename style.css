@@ -1,5 +1,6 @@
 html {
  background-color: #aaaaaa;
+ box-sizing: border-box;
 }
 body {
   margin: 50px;
@@ -10,8 +11,99 @@ body {
   position: center;
   border: solid red;
   border-radius: 50px;
-  margin-top: -70px;
+  margin-top: -375px;
 }
 header {
   text-align: right;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.panels {
+  margin-left: 45vw;
+  min-height: 25vh;
+  min-width: 50vw;
+  overflow: hidden;
+  display: flex;
+}
+
+.panel {
+  margin: 10px;
+  box-shadow: inset 0 0 0 5px #ffffff;
+  border-radius: 8px;
+  color: white;
+  text-align: center;
+  align-items: center;
+  transition:
+    font-size 0.7s cubic-bezier(0.61,-0.19, 0.7,-0.11),
+    flex 0.7s cubic-bezier(0.61,-0.19, 0.7,-0.11),
+    background 0.2s;
+  font-size: 15px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  flex: 1;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.panel1 { background-image:url(); }
+.panel2 { background-image:url(); }
+.panel3 { background-image:url(); }
+.panel4 { background-image:url(); }
+.panel5 { background-image:url(); }
+.panel6 { background-image:url(); }
+.panel7 { background-image:url(); }
+.panel8 { background-image:url(); }
+
+
+
+.panel > * {
+  margin: 0;
+  width: 100%;
+  transition: transform 0.5s;
+  flex: 1 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.panel > *:first-child { transform: translateY(-130%); }
+.panel.open-active > *:first-child { transform: translateY(0%); }
+.panel > *:last-child { transform: translateY(130%); }
+.panel.open-active > *:last-child { transform: translateY(-30%); }
+
+.panel p {
+  font-family: 'Lobster', cursive;
+  font-size: 1em;
+  justify-content: left;
+  align-items: left;
+  color: aliceblue;
+}
+a:visited {
+  color: #ffffff;
+  
+}
+
+.panel p:nth-child(2) {
+  font-size: 2em;
+  opacity: .95;
+  color: transparent;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Pacifico', cursive;
+}
+
+.panel.open {
+  flex: 2;
+  font-size: 2.5em;
+}
+
+@media only screen and (max-width: 600px) {
+  .panel p {
+    font-size: 1em;
+  }
 }
