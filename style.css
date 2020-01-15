@@ -8,4 +8,6 @@ body {
 #draw {
   background-color: #ffffff;
   position: center;
+  border: solid red;
+  border-radius: 50px;
 }
