@@ -7,6 +7,50 @@
 </head>
 <body>
     <header><h1>hello</h1></header>
+    <div class="panels">
+    <div class="panel panel1">
+        <p></p>
+        <p>hi</p>
+        <p></p>
+      </div>
+      <div class="panel panel2">
+        <p></p>
+        <p>hi</p>
+        <p></p>
+      </div>
+      <div class="panel panel3">
+        <p></p>
+        <p>hi</p>
+        <p></p>
+      </div>
+      <div class="panel panel4">
+        <p></p>
+        <p>hi</p>
+        <p></p>
+      </div>
+    </div>
+    <div class="panels">
+    <div class="panel panel5">
+        <p></p>
+        <p>hi</p>
+        <p></p>
+      </div>
+      <div class="panel panel6">
+        <p></p>
+        <p>hi</p>
+        <p></p>
+      </div>
+      <div class="panel panel7">
+        <p></p>
+        <p>hi</p>
+        <p></p>
+      </div>
+      <div class="panel panel8">
+        <p></p>
+        <p>hi</p>
+        <p></p>
+      </div>
+    </div>
     <canvas id="draw" color="#ffffff"></canvas>
 <script>
   const canvas = document.querySelector('#draw');
@@ -56,6 +100,23 @@ canvas.addEventListener('mousedown', (e) => {
 canvas.addEventListener('mousemove', draw);
 canvas.addEventListener('mouseup', () => isDrawing = false);
 canvas.addEventListener('mouseout', () => isDrawing = false);
+
+const panels = document.querySelectorAll('.panel');
+
+function toggleOpen() {
+  console.log('Hello');
+  this.classList.toggle('open');
+}
+
+function toggleActive(e) {
+  console.log(e.propertyName);
+  if (e.propertyName.includes('flex')) {
+    this.classList.toggle('open-active');
+  }
+}
+
+panels.forEach(panel => panel.addEventListener('click', toggleOpen));
+panels.forEach(panel => panel.addEventListener('transitionend', toggleActive));
 </script>
 </body>
 </html>
