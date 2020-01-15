@@ -11,7 +11,8 @@ body {
   position: center;
   border: solid red;
   border-radius: 50px;
-  margin-top: -375px;
+  margin-top: -700px;
+  margin-bottom: 0px;
 }
 header {
   text-align: right;
@@ -23,15 +24,14 @@ header {
 
 .panels {
   margin-left: 45vw;
-  min-height: 25vh;
-  min-width: 50vw;
+  min-height: 35vh;
+  min-width: 35vw;
   overflow: hidden;
   display: flex;
 }
 
 .panel {
   margin: 10px;
-  box-shadow: inset 0 0 0 5px #ffffff;
   border-radius: 8px;
   color: white;
   text-align: center;
@@ -50,14 +50,14 @@ header {
   flex-direction: column;
 }
 
-.panel1 { background-image:url(); }
-.panel2 { background-image:url(); }
-.panel3 { background-image:url(); }
-.panel4 { background-image:url(); }
-.panel5 { background-image:url(); }
-.panel6 { background-image:url(); }
-.panel7 { background-image:url(); }
-.panel8 { background-image:url(); }
+.panel1 { background-image:url(assets/kodama1.jpeg); }
+.panel2 { background-image:url(assets/kodama2.jpeg); }
+.panel3 { background-image:url(assets/kodama3.jpeg); }
+.panel4 { background-image:url(assets/kodama4.jpeg); }
+.panel5 { background-image:url(assets/kodama5.jpeg); }
+.panel6 { background-image:url(assets/kodama6.jpeg); }
+.panel7 { background-image:url(assets/kodama7.jpg); }
+.panel8 { background-image:url(assets/kodama8.jpg); center bottom; }
 
 
 
