@@ -2,6 +2,10 @@ html {
  background-color: #aaaaaa;
 }
 body {
-  margin: 20px;
+  margin: 50px;
   overflow: hidden;
+}
+#draw {
+  background-color: #ffffff;
+  position: center;
 }
