@@ -2,5 +2,6 @@ html {
  background-color: #aaaaaa;
 }
 body {
+  margin: 20px;
   overflow: hidden;
 }
