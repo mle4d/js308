@@ -10,4 +10,8 @@ body {
   position: center;
   border: solid red;
   border-radius: 50px;
+  margin-top: -70px;
+}
+header {
+  text-align: right;
 }
