@@ -38,6 +38,7 @@ h3 {
 .paneldiv {
   background-color: #ffffff;
   border-radius: 20px;
+  border: solid black 5px;
   width: 50vw;
   height: 80vh;
   margin-left: 45vw;
@@ -47,14 +48,13 @@ h3 {
   margin-top: 20px;
   min-height: 32vh;
   min-width: 42vw;
-  /* overflow: hidden; */
   display: flex;
 }
 
 .panel {
-  /* margin: 10px; */
+  margin: 5px;
   border-radius: 20px;
-  color: white;
+  color: transparent;
   text-align: center;
   align-items: center;
   transition:
@@ -83,7 +83,7 @@ h3 {
 
 
 .panel > * {
-  margin: 0;
+  margin: 10;
   width: 100%;
   transition: transform 0.5s;
   flex: 1 0 auto;
@@ -94,8 +94,8 @@ h3 {
 
 .panel > *:first-child { transform: translateY(-130%); }
 .panel.open-active > *:first-child { transform: translateY(0%); }
-.panel > *:last-child { transform: translateY(30%); }
-.panel.open-active > *:last-child { transform: translateY(-30%) color(black);}
+.panel > *:last-child { transform: translateY(10%); }
+.panel.open-active > *:last-child { transform: translateY(0%) color(black);}
 
 .panel p {
   font-family: 'Gloria Hallelujah', cursive;
