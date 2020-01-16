@@ -6,17 +6,19 @@
   <title></title>
 </head>
 <body>
-    <header><h1>hello</h1></header>
+    <header><h1>Kodrawma!</h1>
+    <h3>Click on a step to read directions!</h3></header>
+    <div class="paneldiv">
     <div class="panels">
     <div class="panel panel1">
         <p></p>
-        <p>hi</p>
+        <p></p>
         <p></p>
       </div>
       <div class="panel panel2">
         <p></p>
-        <p>hi</p>
         <p></p>
+        <p>draw</p>
       </div>
       <div class="panel panel3">
         <p></p>
@@ -51,12 +53,13 @@
         <p></p>
       </div>
     </div>
+  </div>
     <canvas id="draw" color="#ffffff"></canvas>
 <script>
   const canvas = document.querySelector('#draw');
   const ctx = canvas.getContext('2d');
-  canvas.width = '350';
-  canvas.height = '500';
+  canvas.width = '370';
+  canvas.height = '520';
   canvas.color = '#ffffff';
   ctx.strokeStyle = '#FFFFFF';
   ctx.lineJoin = 'round';
