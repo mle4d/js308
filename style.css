@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Concert+One|Gloria+Hallelujah&display=swap');
 html {
  background-color: #aaaaaa;
  box-sizing: border-box;
@@ -12,9 +13,10 @@ body {
   border: solid red;
   border-radius: 50px;
   margin-top: -700px;
-  margin-bottom: 0px;
+  margin-bottom: 40px;
 }
 header {
+  margin-top: -50px;
   text-align: right;
 }
 
@@ -22,17 +24,24 @@ header {
   box-sizing: inherit;
 }
 
-.panels {
+.paneldiv {
+  background-color: #ffffff;
+  border-radius: 20px;
+  width: 50vw;
+  height: 80vh;
   margin-left: 45vw;
-  min-height: 35vh;
-  min-width: 35vw;
-  overflow: hidden;
+}
+.panels {
+  margin-top: 20px;
+  min-height: 32vh;
+  min-width: 42vw;
+  /* overflow: hidden; */
   display: flex;
 }
 
 .panel {
-  margin: 10px;
-  border-radius: 8px;
+  /* margin: 10px; */
+  border-radius: 20px;
   color: white;
   text-align: center;
   align-items: center;
@@ -57,7 +66,7 @@ header {
 .panel5 { background-image:url(assets/kodama5.jpeg); }
 .panel6 { background-image:url(assets/kodama6.jpeg); }
 .panel7 { background-image:url(assets/kodama7.jpg); }
-.panel8 { background-image:url(assets/kodama8.jpg); center bottom; }
+.panel8 { background-image:url(assets/kodama8.jpg); }
 
 
 
@@ -73,19 +82,15 @@ header {
 
 .panel > *:first-child { transform: translateY(-130%); }
 .panel.open-active > *:first-child { transform: translateY(0%); }
-.panel > *:last-child { transform: translateY(130%); }
-.panel.open-active > *:last-child { transform: translateY(-30%); }
+.panel > *:last-child { transform: translateY(30%); }
+.panel.open-active > *:last-child { transform: translateY(-30%) color(black);}
 
 .panel p {
   font-family: 'Lobster', cursive;
   font-size: 1em;
-  justify-content: left;
-  align-items: left;
-  color: aliceblue;
-}
-a:visited {
-  color: #ffffff;
-  
+  justify-content: center;
+  align-items: center;
+  /* color: transparent; */
 }
 
 .panel p:nth-child(2) {
@@ -98,8 +103,11 @@ a:visited {
 }
 
 .panel.open {
-  flex: 2;
-  font-size: 2.5em;
+  flex: 1;
+  font-size: 3em;
+  color:black;
+  background-size: cover;
+  min-height: 32vh;
 }
 
 @media only screen and (max-width: 600px) {
