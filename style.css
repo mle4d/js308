@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Concert+One|Gloria+Hallelujah&display=swap');
 html {
- background-color: #aaaaaa;
+ background-color: #929292;
  box-sizing: border-box;
 }
 body {
@@ -14,8 +14,8 @@ body {
   border-radius: 20px;
   margin-top: -700px;
   margin-bottom: 15px;
-  width: 40vw;
-  height: 80vh;
+  /* width: 40vw;
+  height: 80vh; */
 }
 header {
   margin-top: -50px;
