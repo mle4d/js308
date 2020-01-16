@@ -62,9 +62,9 @@
   canvas.height = '520';
   canvas.color = '#ffffff';
   ctx.strokeStyle = '#FFFFFF';
-  ctx.lineJoin = 'round';
-  ctx.lineCap = 'round';
-  ctx.lineWidth = 5;
+  ctx.lineJoin = 'solid';
+  ctx.lineCap = 'solid';
+  ctx.lineWidth = 2;
 
   let isDrawing = false;
   let lastX = 0;
@@ -85,14 +85,8 @@
   if (hue >= 0) {
     hue = 0;
   }
-  if (ctx.lineWidth >= 5 || ctx.lineWidth <= 5) {
+  if (ctx.lineWidth >= 2 || ctx.lineWidth <= 2) {
     direction = !direction;
-  }
-
-  if(direction) {
-    ctx.lineWidth++;
-  } else {
-    ctx.lineWidth--;
   }
 
 }
