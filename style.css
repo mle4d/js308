@@ -5,7 +5,6 @@ html {
   background: -webkit-linear-gradient(-45deg, #79168d68 0%, #1C6EA4 50%, #AEA9C5 100%);
   background: linear-gradient(135deg, #79168d68 0%, #1C6EA4 50%, #AEA9C5 100%);
   box-sizing: border-box;
-  opacity: .90;
 }
 body {
   margin: 50px;
